@@ -32,6 +32,11 @@ export default function ContactForm() {
         body: JSON.stringify(data),
       });
 
+      if (response.status === 429) {
+        setStatus("Too many attempts. Please wait a minute and try again.");
+        return;
+      }
+
       const result = await response.json();
 
       if (!response.ok) {

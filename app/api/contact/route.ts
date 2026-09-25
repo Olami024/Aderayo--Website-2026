@@ -34,8 +34,8 @@ export async function POST(request: Request) {
     const { name, email, subject, message } = result.data;
 
     const { data, error } = await resend.emails.send({
-      from: "Aderayo Website <onboarding@resend.dev>",
-      to: ["olamideadelanwa12@gmail.com"],
+      from: "Aderayo Website <website@aderayoadelanwa.com>",
+      to: ["hello@aderayoadelanwa.com"],
       replyTo: email,
       subject: `Website enquiry: ${subject}`,
       text: `

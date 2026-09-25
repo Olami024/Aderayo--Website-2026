@@ -18,10 +18,15 @@ export default function AboutPage() {
         </h1>
 
         <p>
-          Aderayo is a Research Consultant and Technical Writer with several years of experience in research, interdisciplinary consulting, research training, and research-informed communication. 
-          Her technical writing includes documentation, tutorials, and technical notes on backend systems, APIs, databases, data infrastructure, AI applications, research software, and emerging technologies.
-          She is also expanding her technical practice through Python development and backend software engineering, with a growing focus on how research can inform the design, documentation, and evaluation of technical systems.
-          Alongside her professional work, Aderayo is a PhD Researcher in Philosophy studying the intersection of technology and human judgment, with particular interest in how computational systems shape reasoning and decision-making.
+          Aderayo is a Research Consultant whose work focuses on helping individuals, organisations, and interdisciplinary teams investigate complex questions, develop credible evidence, and translate research into clear, usable knowledge.
+          With over six years of research experience and more than 70 projects delivered, her practice spans research design, qualitative, quantitative, and mixed-method inquiry, data collection and analysis, evidence synthesis, research reporting, and project coordination. 
+          She works across academic, organisational, and applied research contexts, supporting the development of well-structured studies, rigorous analysis, and findings that inform understanding, communication, and decision-making.
+          
+          Her research consulting practice also extends to research methodology, training, advisory support, and capacity development for individuals, researchers, and interdisciplinary research teams. 
+          She is expanding this work towards meta-research, with an interest in examining how research is designed, conducted, evaluated, and communicated, and how research practices can be strengthened.
+          
+          Through Ethentra, she is building a research-driven practice that connects research, learning, and technology, with particular interest in investigating digital systems and translating evidence into practical knowledge.
+          Alongside her professional work, Aderayo is a PhD Researcher in Philosophy examining how computational systems shape human judgment, reasoning, and decision-making.
         </p>
         <div className="about-image-single">
           <Image
@@ -97,16 +102,10 @@ export default function AboutPage() {
         <h2>Building a deeper understanding of software systems.</h2>
 
         <p>
-          Alongside my research and writing work, I am developing my technical
-          practice in Python and backend software engineering. My current learning
-          focuses on APIs, server-side development, databases, data handling, and
-          the architecture behind web applications.
-        </p>
-
-        <p>
-          This technical work complements my broader interest in how computational
-          systems are designed, documented, evaluated, and used in real-world
-          decision-making.
+          Alongside her research consulting work, Aderayo maintains a technical writing practice focused on documentation, tutorials, and clear explanations of backend systems, APIs, databases, data infrastructure, AI applications, research software, and emerging technologies.
+          She is also developing her software engineering practice through Python and backend development, with a focus on server-side applications, data handling, databases, and web application architecture.
+          
+          This work complements her broader interest in how computational systems are designed, documented, evaluated, and used in real-world decision-making.
         </p>
       </section>
     </main>

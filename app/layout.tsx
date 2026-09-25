@@ -63,6 +63,7 @@ export default function RootLayout({
             <a href="/">Home</a>
             <a href="/about">About</a>
             <a href="/journal">Journal</a>
+            <a href="/shop">Shop</a>
             <a href="/contact">Contact</a>
           </nav>
         </header>

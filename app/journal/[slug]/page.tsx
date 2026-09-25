@@ -71,15 +71,20 @@ export default async function JournalPostPage({
 
         <p className="journal-meta">{post.date}</p>
       </header>
-      <div className="journal-cover">
-        <Image
-        src="/images/journal/human-centered-ai-cover.png"
-        alt={post.title}
-        width={1200}
-        height={700}
-        loading="eager"
-        />
-      </div>
+        {post.coverImage && (
+          <div className="journal-cover">
+            <Image
+              src={post.coverImage}
+              alt=""
+              width={1200}
+              height={700}
+              style={{
+                width: "100%",
+                height: "auto",
+              }}
+            />
+          </div>
+      )}
 
       <article className="journal-post">
         <MDXRemote source={source} />

@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/about/media",
     "/about/ventures",
     "/journal",
+    "/shop",
     "/contact",
   ];
 

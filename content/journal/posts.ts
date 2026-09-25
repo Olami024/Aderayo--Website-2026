@@ -4,6 +4,7 @@ export type JournalPost = {
   description: string;
   date: string;
   category: string;
+  coverImage?: string;
 };
 
 export const journalPosts: JournalPost[] = [
@@ -14,5 +15,6 @@ export const journalPosts: JournalPost[] = [
       "A human-centered approach to evaluating AI through capability, judgment, agency, fairness, transparency, and human flourishing.",
     date: "Published April 9, 2026 · Republished here September 25 2026",
     category: "AI & Human Judgment",
+    coverImage: "/images/journal/human-centered-ai-cover.png",
   },
 ];

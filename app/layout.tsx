@@ -1,3 +1,4 @@
+import AnalyticsConsent from "./AnalyticsConsent";
 import "./globals.css";
 import Image from "next/image";
 import type { Metadata } from "next";
@@ -88,6 +89,7 @@ export default function RootLayout({
                 </a>
           </div>
         </footer>
+        <AnalyticsConsent />
       </body>
     </html>
   );

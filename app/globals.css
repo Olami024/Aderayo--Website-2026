@@ -907,3 +907,51 @@ textarea:focus-visible {
   outline: 2px solid var(--text-soft);
   outline-offset: 3px;
 }
+
+.analytics-banner {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  z-index: 1000;
+
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 24px;
+
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 35px rgba(0, 0, 0, 0.15);
+}
+
+.analytics-banner p {
+  margin: 0 0 18px;
+  line-height: 1.7;
+}
+
+.analytics-banner a {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.analytics-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.analytics-settings {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 999;
+
+  padding: 8px 12px;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}

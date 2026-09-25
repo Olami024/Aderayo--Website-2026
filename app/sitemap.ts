@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/journal",
     "/shop",
     "/contact",
+    "/privacy",
   ];
 
   const staticPages = pages.map((page) => ({

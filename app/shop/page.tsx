@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Shop",
   description:
-    "Explore resources and products from Aderayo Olamide Adelanwa.",
+    " Explore resources and products from Aderayo Olamide Adelanwa.",
 };
 
 export default function ShopPage() {

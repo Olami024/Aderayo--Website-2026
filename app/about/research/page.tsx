@@ -23,8 +23,16 @@ export default function ResearchPage() {
           Applied philosophy · Philosophy of technology · Ethics
         </p>
 
-        <a href="/journal">
-          Explore the Journal →
+        <a href="https://orcid.org/0009-0002-3800-2661"
+        target="_blank"
+        rel="noopener noreferrer"
+        >ORCID ↗
+        </a>
+
+        <a href="https://scholar.google.com/citations?user=CpTbnwQAAAAJ"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Google Scholar↗
         </a>
       </section>
     </main>

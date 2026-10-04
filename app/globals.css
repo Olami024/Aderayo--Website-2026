@@ -955,3 +955,125 @@ textarea:focus-visible {
   font-size: 12px;
   cursor: pointer;
 }
+.focus-section {
+  padding: 90px 0;
+}
+
+.home-feature-image {
+  max-width: 1000px;
+  margin-bottom: 48px;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.home-feature-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* =========================================
+   RESEARCH & DECISION INTELLIGENCE
+   ========================================= */
+
+.service-card {
+  width: 100%;
+  max-width: none;
+  margin-top: 48px;
+  padding: clamp(32px, 5vw, 64px);
+
+  background: #ffffff;
+  border: 1px solid rgba(45, 28, 20, 0.12);
+  border-radius: 18px;
+}
+
+.service-card h2 {
+  max-width: 760px;
+  margin-bottom: 20px;
+}
+
+.service-intro {
+  max-width: 800px;
+  line-height: 1.75;
+}
+
+.service-kicker {
+  margin-top: 42px;
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+.services-image {
+  width: 100%;
+  max-width: 440px;
+  margin-bottom: 40px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.services-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* SERVICE PATH CARDS */
+
+.intelligence-paths {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  width: 100%;
+  margin: 30px 0 40px;
+}
+
+.intelligence-path {
+  min-width: 0;
+  padding: 28px;
+
+  background: #f8f4f0;
+  border: 1px solid rgba(45, 28, 20, 0.1);
+  border-radius: 16px;
+}
+
+.intelligence-path span {
+  display: block;
+  margin-bottom: 24px;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.intelligence-path h3 {
+  margin: 0 0 16px;
+
+  font-size: clamp(1.25rem, 2vw, 1.55rem);
+  line-height: 1.25;
+}
+
+.intelligence-path p {
+  margin: 0;
+  line-height: 1.7;
+}
+
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+  .intelligence-paths {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .service-card {
+    padding: 26px 20px;
+  }
+
+  .intelligence-path {
+    padding: 22px;
+  }
+}

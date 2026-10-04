@@ -30,16 +30,10 @@ export default function VenturesPage() {
         <h2>Ethentra</h2>
 
         <p>
-          Ethentra is a research-driven firm working across research,
-          advisory, training, and technology.
-          
-          Through Ethentra Academy, we help people develop practical research
-          skills for investigating questions, evaluating information,
-          analysing evidence, and communicating research clearly.
-          
-          Ethentra Research / Labs is being developed around research, surveys,
-          data collection, digital systems, and the development of
-          research-informed technical products.
+          Ethentra is a research, education 
+          and technology company advancing knowledge, 
+          developing professional capability, 
+          and building practical technology solutions.
         </p>
 
         <div className="hero-buttons">

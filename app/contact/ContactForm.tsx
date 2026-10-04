@@ -19,6 +19,7 @@ export default function ContactForm() {
       name: formData.get("name"),
       email: formData.get("email"),
       subject: formData.get("subject"),
+      category: formData.get("category"),
       message: formData.get("message"),
       website: formData.get("website"),
     };
@@ -95,7 +96,44 @@ export default function ContactForm() {
           required
         />
       </div>
+     <div className="form-field">
+        <label htmlFor="category">Enquiry type</label>
 
+        <select
+          id="category"
+          name="category"
+          required
+          defaultValue=""
+        >
+          <option value="" disabled>
+            Select an enquiry type
+          </option>
+
+          <option value="Growth Intelligence">
+            Growth Intelligence
+          </option>
+
+          <option value="Evidence Intelligence">
+            Evidence Intelligence
+          </option>
+
+          <option value="Decision Intelligence">
+            Decision Intelligence
+          </option>
+
+          <option value="Research Collaboration">
+            Research Collaboration
+          </option>
+
+          <option value="Speaking / Training">
+            Speaking / Training
+          </option>
+
+          <option value="General Enquiry">
+            General Enquiry
+          </option>
+        </select>
+      </div>
       <div className="contact-field">
         <label htmlFor="message">Message</label>
         <textarea

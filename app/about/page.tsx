@@ -31,7 +31,7 @@ export default function AboutPage() {
         </p>
         <div className="about-image-single">
           <Image
-          src="/images/aderayo-about-2.png"
+          src="/images/aderayo-about-3.png"
           alt="Aderayo Olamide Adelanwa"
           width={700}
           height={850}

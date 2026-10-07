@@ -9,25 +9,25 @@ export default function HomePage() {
       {/* Hero */}
       <section className="hero hero-split">
         <div className="hero-content">
-          <p className="eyebrow">
-            Research Consultant | Philosophy, Human Judgment & Technology
-          </p>
-
-          <h1>
-            Research & Decision Intelligence for better business and
-            organisational decisions.
+          <h1 className="eyebrow">
+            RESEARCH CONSULTANT | DECISION SYSTEMS | HUMAN JUDGMENT & TECHNOLOGY
           </h1>
 
           <p className="hero-text">
-            I help businesses, professionals, and organisations investigate
-            complex problems, understand markets and evidence, and make
-            clearer, better-informed decisions.
+            I help businesses, professionals, and organisations 
+            investigate complex problems, understand markets and evidence, 
+            evaluate opportunities, and make better-informed decisions.
           </p>
 
           <p className="hero-text">
-            My work combines rigorous research, analytical thinking,
-            and practical recommendations across growth, evidence,
-            and organisational decision-making.
+            My work combines rigorous research, analytical thinking, 
+            human judgment, and practical decision support 
+            across markets, evidence, operations, and emerging technology.
+          </p>
+          <p className="hero-text">
+            I am particularly interested in the systems behind important decisions: 
+            what information matters, how alternatives are evaluated, where human judgment belongs, 
+            and how data and technology can support better outcomes.
           </p>
 
           <div className="hero-buttons">
@@ -37,8 +37,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-
 
 
       {/* Journal */}
@@ -51,14 +49,19 @@ export default function HomePage() {
           </p>
 
           <h2>
-            Research, decisions, markets, technology, and human judgment.
+            Research, decision systems, markets, technology, and human judgment.
           </h2>
 
           <p className="hero-text">
-            The Journal is where I explore questions around research,
-            decision-making, markets, artificial intelligence, technology,
-            philosophy, and the ways people and organisations respond to
-            change.
+            The Journal is where I write about the questions I investigate, 
+            the ideas I am developing, and how evidence, markets, technology, 
+            and human judgment influence the decisions people and organisations make.
+            
+          </p>
+          <p>
+            Topics include: Research| Markets and business| Human judgment
+            | Decision systems| Artificial intelligence | Machine learning 
+            |Technology| Philosophy|Recommendation and optimization systems| Data-driven organisations.
           </p>
 
           <a href="/journal" className="button secondary">
@@ -146,14 +149,8 @@ export default function HomePage() {
             Have a problem worth investigating?
           </h2>
 
-          <p className="home-contact-text">
-            I work with businesses, professionals, and organisations
-            on questions involving markets, customers, evidence,
-            research, and complex decisions.
-          </p>
-
           <a href="/contact" className="button primary">
-            Discuss Your Challenge
+            Discuss Your Project
           </a>
 
         </div>

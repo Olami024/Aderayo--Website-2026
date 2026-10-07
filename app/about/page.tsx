@@ -18,17 +18,35 @@ export default function AboutPage() {
         </h1>
 
         <p>
-          Aderayo is a research consultant with over six years of experience and an academic background in philosophy. 
-          Her work focuses on research and decision intelligence, helping individuals and organisations investigate complex problems, understand evidence, markets, and emerging technologies, and make better-informed decisions.
+          Aderayo Olamide Adelanwa is a researcher, consultant, founder, and emerging technology practitioner 
+          working at the intersection of research, human judgment, decision systems, business, and technology.
+          With more than six years of research experience and an academic background in philosophy,
+          her work focuses on helping individuals and organisations investigate complex questions, 
+          understand markets and evidence, evaluate alternatives, and make better-informed decisions.
         </p>
         <p>
-          Through Ethentra, she is building a research-led company that connects research, education, technology, and innovation.
-          Alongside her professional work, Aderayo is a PhD Researcher in Philosophy examining how computational systems shape human judgment, reasoning, and decision-making; while building a career path in Backend Engineering and MLOps.
+          Her broader professional interest is in Decision Systems: how people, evidence, organisational processes, 
+          business rules, data, software, and machine-learning systems come together to shape decisions and outcomes.
+          Through her consulting work, Aderayo works on questions involving market research, 
+          competitive positioning, evidence synthesis, opportunity assessment, organisational decision-making, and complex research problems
         </p>
         <p>
-          Her long-term goal is to build globally relevant institutions, technologies, 
-          and knowledge that strengthen human capability, responsible innovation, and sustainable organisations.
+          Through Ethentra, she is building a research-led company connecting research, education, technology, and innovation.
+          Alongside her professional work, Aderayo holds an Master degree(distinction) in Philosophy and currently a PhD Researcher in Philosophy 
+          studying human judgment and moral agency within increasingly data-driven and computational decision environments.
         </p>
+        <p>
+          Her technical development in Python backend engineering, MLOps, and machine learning extends this research interest into the systems themselves: 
+          how software and machine-learning infrastructure are designed, deployed, monitored, and incorporated into real organisational decisions.
+          
+        </p>
+        <p>
+          Over time, her work is developing toward the design and analysis of human-machine decision systems, 
+          including recommendation, optimization, and machine-learning systems that support consequential business 
+          and organisational decisions. Her long-term objective is to build globally relevant research, technologies, 
+          institutions, and decision systems that strengthen human capability and create sustainable economic and organisational value.
+        </p>
+        
         <div className="about-image-single">
           <Image
           src="/images/aderayo-about-3.png"
@@ -48,13 +66,29 @@ export default function AboutPage() {
             <p className="eyebrow">01</p>
             <h2>Research & PhD</h2>
             <p>
-              Her doctoral research, broader research agenda, and work on human
-              judgment, uncertainty, ethics, software systems, AI, and
-              computational decision-making.
+              Doctoral research and broader work on human judgment,
+              moral agency, uncertainty, reasoning, evidence, technology,
+              artificial intelligence, and data-driven decision systems.
             </p>
+          
           </div>
 
           <span className="arrow">Explore research →</span>
+        </a>
+
+         <a href="/about/research" className="about-card">
+          
+          <div>
+            <p className="eyebrow">02</p>
+            <h2>Decision Systems & Technology</h2>
+            <p>
+              Work and learning across decision systems, Python backend engineering,
+              MLOps, machine learning, recommendation systems, optimization, 
+              and the relationship between human and computational decision-making.
+            </p>
+          </div>
+
+          <span className="arrow">Explore technology →</span>
         </a>
 
         <a href="/about/media" className="about-card">
@@ -62,8 +96,7 @@ export default function AboutPage() {
             <p className="eyebrow">03</p>
             <h2>Media</h2>
             <p>
-              Articles, essays, socials, video, newsletter, future talks,
-              interviews, podcasts, and public-facing research communication.
+              Articles, social media, newsletter, podcasts, and public-facing research communication.
             </p>
           </div>
 
@@ -75,7 +108,7 @@ export default function AboutPage() {
             <p className="eyebrow">04</p>
             <h2>Ventures</h2>
             <p>
-              Her entrepreneurial interests span research, technology, lifestyle, hospitality, and commerce.
+              Entrepreneurial interests span research, technology, lifestyle, hospitality, and commerce.
             </p>
           </div>
 

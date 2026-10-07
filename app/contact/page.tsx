@@ -11,22 +11,10 @@ export default function ContactPage() {
   return (
     <main className="page-shell">
       <section className="page-hero">
-        <p className="eyebrow">Contact</p>
-
-        <h1>Let's connect.</h1>
-
-        <p>
-          For research consulting, research collaboration, training, technical
-          writing, documentation, speaking, media, or other professional
-          enquiries.
-        </p>
-      </section>
-
-      <section className="contact-section">
         <p className="eyebrow">Get In Touch</p>
 
         <h2>
-          Have a research question, project, or conversation worth exploring?
+          Have a project, or conversation worth exploring?
         </h2>
 
         <ContactForm />

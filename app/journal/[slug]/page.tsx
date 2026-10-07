@@ -3,7 +3,10 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote-client/rsc";
-import { journalPosts } from "../../../content/journal/posts";
+import {
+  journalPosts,
+  getArticleBySlug,
+} from "../../../lib/journal";
 
 export function generateStaticParams() {
   return journalPosts.map((post) => ({
@@ -18,8 +21,7 @@ export async function generateMetadata({
 }) {
   const { slug } = await params;
 
-  const post = journalPosts.find((post) => post.slug === slug);
-
+  const post = getArticleBySlug(slug);
   if (!post) {
     return {};
   }

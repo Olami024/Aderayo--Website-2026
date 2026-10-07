@@ -900,6 +900,40 @@ p {
   line-height: 1.8;
 }
 
+/* Journal categories */
+
+.journal-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 18px;
+  margin-top: 28px;
+}
+
+.journal-category-link {
+  display: inline-block;
+  padding: 10px 16px;
+
+  border: 1px solid rgba(70, 45, 30, 0.16);
+  border-radius: 999px;
+
+  color: inherit;
+  text-decoration: none;
+
+  font-size: 0.95rem;
+  line-height: 1.2;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.journal-category-link:hover {
+  background: #f2e8de;
+  border-color: #b5622a;
+  transform: translateY(-2px);
+}
+
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
@@ -973,7 +1007,7 @@ textarea:focus-visible {
 }
 
 /* =========================================
-   RESEARCH & DECISION INTELLIGENCE
+   SERVICES
    ========================================= */
 
 .service-card {
@@ -1075,5 +1109,24 @@ textarea:focus-visible {
 
   .intelligence-path {
     padding: 22px;
+  }
+}
+.research-direction {
+  padding: 48px 0;
+  border-top: 1px solid rgba(70, 45, 30, 0.14);
+  border-bottom: 1px solid rgba(70, 45, 30, 0.14);
+}
+
+.research-direction .eyebrow {
+  margin-bottom: 0;
+}
+@media (max-width: 600px) {
+  .journal-categories {
+    gap: 10px;
+  }
+
+  .journal-category-link {
+    padding: 9px 13px;
+    font-size: 0.88rem;
   }
 }

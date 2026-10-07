@@ -12,63 +12,90 @@ export default function ServicePage() {
     <main className="page-shell">
       <section className="page-hero">
         <p className="eyebrow">Services</p>
-
-        <h1>
-          Research & Decision Intelligence.
-        </h1>
-          <div className="services-image">
-            <Image
-              src="/images/aderayo-about-1.png"
-              alt="Aderayo Olamide Adelanwa"
-               width={1000}
-               height={650}
-              />
-          </div>
-      </section>
-
-      <section>
         <article className="focus-card">
-            
-            <p className="eyebrow">What I Do</p>
 
-            <h2>Research & Decision Intelligence</h2>
 
-            <h4>One service. Three paths.</h4>
+            <h2>Research, Decision Systems & Technical Services</h2>
 
             <p>
-              Different problems require different forms of investigation.
-              My work is organised through three connected pathways.
+              I help founders, growing businesses, and organisations understand markets, 
+              evaluate evidence, structure complex decisions, and build practical technology solutions.
             </p>
+            
+            <div className="services-image">
+              <Image
+                src="/images/aderayo-about-1.png"
+                alt="Aderayo Olamide Adelanwa"
+                width={1000}
+                height={650}
+                />
+            </div>
 
-            <div className="intelligence-paths">
+            <div className="services-paths">
 
-              <div className="intelligence-path">
-                <span>01 / Growth Intelligence</span>
+              <div className="services-path">
+                <span>01 / Market & Growth Research</span>
                 <p>
-                  <strong>
-                    Understand customers, competitors, markets, positioning,
-                    and digital opportunities before committing resources to growth.
-                   </strong>
+                  <p>
+                      Structured research to understand markets, customers, competitors, positioning, trends, and growth opportunities.
+                      <p>
+                        <strong>
+                        Services: Market research, competitor analysis, 
+                        customer research, opportunity assessment, 
+                        positioning, and industry research.
+                        </strong>
+                      </p>
+                  </p>
                 </p>
               </div>
 
-              <div className="intelligence-path">
-                <span>02 / Evidence Intelligence</span>
+              <div className="services-path">
+                <span>02 / Evidence & Decision Research</span>
                 <p>
-                  <strong>
-                    Investigate complex questions through research,
-                    evidence synthesis, analysis, and structured inquiry.
-                  </strong>
+                  <p>
+                    Structured research that turns complex or fragmented information into clearer choices.
+                    <p>
+                      <strong>
+                      Services: Evidence synthesis, desk research, comparative analysis, 
+                      technology research, research briefs, and decision-focused analysis.
+                      </strong>
+                    </p>
+                  </p>
+                </p>
+              </div>
+              
+              <div className="services-path">
+                <span>03 / Decision Systems</span>
+                <p>
+                  <p>
+                    Research and advisory work focused on how important organisational decisions are structured, supported, and improved.
+                    <p>
+                      <strong>
+                      Services: Decision mapping, process analysis, decision criteria, human judgment and 
+                      escalation points, recommendation structures, and outcome review.
+                      </strong>
+                    </p>
+                  </p>
                 </p>
               </div>
 
-              <div className="intelligence-path">
-                <span>03 / Decision Intelligence</span>
+              
+              <div className="services-path">
+                <span>04 / Python Backend & Technical Services</span>
                 <p>
-                  <strong>
-                    Turn research, evidence, and organisational information
-                    into clearer choices, priorities, and practical recommendations.
-                  </strong>
+                  <p>
+                    Backend development for digital products, internal tools, and emerging decision systems.
+                    <p>
+                      <strong>
+                      Services:Python, FastAPI, REST APIs, PostgreSQL, integrations, 
+                      authentication, testing, Docker, deployment, and backend maintenance.
+                      </strong>
+                    </p>
+                  </p>
+                  <p>
+                    My technical work is progressively expanding into 
+                    MLOps, ML systems,recommendation systems, and decision-support applications.
+                  </p>
                 </p>
               </div>
             </div>

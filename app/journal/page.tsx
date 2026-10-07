@@ -1,71 +1,147 @@
 
 import type { Metadata } from "next";
+import Link from "next/link";
+
+import {
+  journal,
+  journalCategories,
+  getAllArticles,
+} from "../../lib/journal";
+
 
 export const metadata: Metadata = {
   title: "Journal",
   description:
-    "Essays and research notes on philosophy, technology, AI, human judgment, software systems, and technical learning.",
+    "Research, decision systems, markets, technology, and human judgment.",
 };
-import { journalPosts } from "../../content/journal/posts";
+
+
 export default function JournalPage() {
+  const journalPosts = getAllArticles();
+
   return (
     <main className="page-shell">
+
+      {/* JOURNAL HERO */}
       <section className="page-hero">
-        <p className="eyebrow">Journal</p>
 
-        <h1>Research, ideas, and work in progress.</h1>
+        <p className="eyebrow">
+          {journal.title}
+        </p>
+
+        <h1>
+          {journal.tagline}
+        </h1>
 
         <p>
-          Essays and notes on research, philosophy, technology, human judgment,
-          software systems, and questions I am currently exploring.
+          {journal.description}
         </p>
+
       </section>
 
+
+      {/* JOURNAL CATEGORIES */}
       <section className="research-direction">
-        <p className="eyebrow">Journal Areas</p>
 
-        <p>
-          Research · Philosophy · Technology · AI · Software Systems ·
-          Human Judgment · Technical Learning
+        <p className="eyebrow">
+          Journal Categories
         </p>
+
+        <div className="journal-categories">
+
+          {journalCategories.map((category) => (
+
+            <Link
+              key={category.slug}
+              href={`/journal/category/${category.slug}`}
+              className="journal-category-link"
+            >
+              {category.name}
+            </Link>
+
+          ))}
+
+        </div>
+
       </section>
 
-      <section className="journal-list">
-        {journalPosts.length === 0 ? (
-          <div className="journal-empty">
-            <p className="eyebrow">Coming Soon</p>
 
-            <h2>New essays and research notes will appear here.</h2>
+      {/* ARTICLES */}
+      <section className="journal-list">
+
+        {journalPosts.length === 0 ? (
+
+          <div className="journal-empty">
+
+            <p className="eyebrow">
+              Coming Soon
+            </p>
+
+            <h2>
+              New essays and research notes will appear here.
+            </h2>
 
             <p>
-              I use this space to develop ideas, document research questions,
-              and share reflections from my academic and technical work.
+              I use this space to investigate questions,
+              develop ideas, and write about research,
+              markets, human judgment, technology,
+              and decision systems.
             </p>
+
           </div>
+
         ) : (
+
           journalPosts.map((post) => (
-            <article className="journal-card" key={post.slug}>
+
+            <article
+              className="journal-card"
+              key={post.slug}
+            >
+
               <p className="journal-meta">
-                {post.category} · {post.date}
+
+                <Link
+                  href={`/journal/category/${post.category}`}
+                >
+                  {journalCategories.find(
+                    (category) =>
+                      category.slug === post.category
+                  )?.name || post.category}
+                </Link>
+
+                {" · "}
+
+                {post.date}
+
               </p>
 
+
               <h2>
-                <a href={`/journal/${post.slug}`}>
+                <Link href={`/journal/${post.slug}`}>
                   {post.title}
-                </a>
+                </Link>
               </h2>
 
-              <p>{post.description}</p>
 
-              <a
+              <p>
+                {post.description}
+              </p>
+
+
+              <Link
                 href={`/journal/${post.slug}`}
                 className="journal-read"
               >
                 Read essay →
-              </a>
+              </Link>
+
             </article>
+
           ))
+
         )}
+
       </section>
 
     </main>

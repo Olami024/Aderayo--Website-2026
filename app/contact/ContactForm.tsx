@@ -109,28 +109,9 @@ export default function ContactForm() {
             Select an enquiry type
           </option>
 
-          <option value="Market & Growth Research">
-            Market & Growth Research
-          </option>
 
-          <option value="Evidence & Decision Research">
-            Evidence & Decision Research
-          </option>
-
-          <option value="Decision Systems">
-            Decision Systems 
-          </option>
-
-          <option value="Python Backend & Technical Services">
-            Python Backend & Technical Services
-          </option>
-
-          <option value="Philosophy & Ethics">
-            Philosophy & Ethics
-          </option>
-
-          <option value="Research Collaboration">
-            Research Collaboration
+          <option value="Ethentra Services">
+            Ethentra Services
           </option>
 
           <option value="Speaking / Training">

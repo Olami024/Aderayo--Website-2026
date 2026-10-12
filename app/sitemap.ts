@@ -6,14 +6,9 @@ const baseUrl = "https://aderayoadelanwa.com";
 export default function sitemap(): MetadataRoute.Sitemap {
   const pages = [
     "",
-    "/about",
-    "/about/research",
-    "/about/technology",
-    "/about/services",
-    "/about/media",
-    "/about/ventures",
-    "/journal",
-    "/services",
+    "/career",
+    "/business",
+    "/writing",
     "/contact",
     "/privacy",
   ];

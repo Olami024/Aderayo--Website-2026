@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Ventures",
+  title: "Business",
   description:
-    "Entrepreneurial ventures by Aderayo Olamide Adelanwa across research, technology, lifestyle, hospitality, and commerce.",
+    "Entrepreneurial ventures by Aderayo Olamide Adelanwa across research, strategy, technology, lifestyle, hospitality, and commerce.",
 };
 
-export default function VenturesPage() {
+export default function BusinessPage() {
   return (
     <main className="page-shell">
       <section className="page-hero">
@@ -19,21 +19,15 @@ export default function VenturesPage() {
 
         <p>
           My entrepreneurial interests span research, technology, lifestyle,
-          hospitality, and commerce. I am interested in building ventures that
-          bring together ideas, practical problem-solving, and long-term value.
+          hospitality, and commerce building through Ethentra and Deran Sphere. 
+          I am interested in building ventures that
+          bring together ideas, practical problem-solving, memorable experience, and long-term value.
         </p>
-      </section>
-
-      <section className="research-direction">
-        <p className="eyebrow">Current Venture</p>
-
-        <h2>Ethentra</h2>
-
         <p>
-          Ethentra is a research, education 
-          and technology company advancing knowledge, 
-          developing professional capability, 
-          and building practical technology solutions.
+          Deran Sphere is currently close due to rebranding, to be reopening soon. 
+          Ethentra provides solutions such as applied research, 
+          strategic advisory, professional education, 
+          and technical engagements.
         </p>
 
         <div className="hero-buttons">

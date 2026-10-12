@@ -1,5 +1,5 @@
-
 import Image from "next/image";
+
 import Script from "next/script";
 
 export default function HomePage() {
@@ -9,94 +9,123 @@ export default function HomePage() {
       {/* Hero */}
       <section className="hero hero-split">
         <div className="hero-content">
-          <h1 className="eyebrow">
-            RESEARCH CONSULTANT | DECISION SYSTEMS | HUMAN JUDGMENT & TECHNOLOGY
-          </h1>
+
+          <p className="eyebrow">
+            RESEARCH & SOLUTIONS STRATEGIST 
+          </p>
+
+          <h2>
+            Research, strategy and technology for complex problems.
+          </h2>
 
           <p className="hero-text">
-            I help businesses, professionals, and organisations 
-            investigate complex problems, understand markets and evidence, 
-            evaluate opportunities, and make better-informed decisions.
+            I work across research, strategy and technology, helping businesses,
+            professionals and organisations understand difficult problems,
+            evaluate evidence and opportunities, and develop better-informed
+            solutions.
           </p>
 
           <p className="hero-text">
-            My work combines rigorous research, analytical thinking, 
-            human judgment, and practical decision support 
-            across markets, evidence, operations, and emerging technology.
-          </p>
-          <p className="hero-text">
-            I am particularly interested in the systems behind important decisions: 
-            what information matters, how alternatives are evaluated, where human judgment belongs, 
-            and how data and technology can support better outcomes.
+            My work is shaped by a background in philosophy; professional
+            research practice, a deep interest in strategy and decision making,
+            and an increasing technical focus on solution architecture.
           </p>
 
           <div className="hero-buttons">
-            <a href="/services" className="button primary">
-              Work with me
+            <a href="/career" className="button primary">
+              Explore Career
             </a>
+
+            <a
+            href="https://ethentra.co"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="button secondary"
+            >
+              Visit Ethentra
+            </a>
+        
           </div>
+        </div>
+        <div>
+
+          <div className="services-image">
+            <Image
+              src="/images/aderayo-about-1.png"
+              alt="Aderayo Olamide Adelanwa"
+              width={1000}
+              height={650}
+              />
+          </div>
+
         </div>
       </section>
 
 
-      {/* Journal */}
+      {/* About Me */}
       <section className="page-shell">
-
         <div className="home-journal">
 
           <p className="eyebrow">
-            Journal
+            About Me
           </p>
 
           <h2>
-            Research, decision systems, markets, technology, and human judgment.
+            Understanding problems before designing solutions.
           </h2>
 
-          <p className="hero-text">
-            The Journal is where I write about the questions I investigate, 
-            the ideas I am developing, and how evidence, markets, technology, 
-            and human judgment influence the decisions people and organisations make.
-            
+          <p >
+            My work has developed around a persistent interest in how people
+            and organisations understand difficult problems, make decisions,
+            and translate ideas into action.
+          </p>
+
+          <p>
+            Philosophy gave me a foundation in reasoning, evidence, ethics and
+            human judgement.Research became the practical extension of that
+            foundation: a way of investigating markets, organisations,
+            technologies and complex questions systematically.
           </p>
           <p>
-            Topics include: Research| Markets and business| Human judgment
-            | Decision systems| Artificial intelligence | Machine learning 
-            |Technology| Philosophy|Recommendation and optimization systems| Data-driven organisations.
+              Strategy is where philosophy and research moves toward decision and action.
+              I am interested in how organisations define problems, assess opportunities, 
+              evaluate alternatives, allocate resources and turn evidence into practical 
+              direction
           </p>
 
-          <a href="/journal" className="button secondary">
-            Explore the Journal
-          </a>
+          <p>
+            Technology is becoming the next layer of that work. I am developing
+            deeper technical capability in Python backend engineering, cloud
+            systems, MLOps and solution architecture, with a long-term interest
+            in designing systems that bring together research, data, human
+            judgement and technology.
+          </p>
 
         </div>
-
       </section>
-
 
       {/* Newsletter */}
       <section className="page-shell">
-
         <div className="newsletter">
 
           <p className="eyebrow">
-            Newsletter
+            Ethentra Insights
           </p>
 
           <h2>
-            Research and ideas for better decisions.
+            Research and ideas worth following.
           </h2>
 
           <p>
-            Occasional notes on research, markets, decision-making,
-            technology, human judgment, and work in progress.
+            Subscribe for new research, essays and practical thinking on
+            markets, decision systems, technology, organisational problems
+            and emerging ideas.
           </p>
-
 
           <Script
             src="https://f.convertkit.com/ckjs/ck.5.js"
             strategy="afterInteractive"
           />
-
 
           <form
             action="https://app.kit.com/forms/9955580/subscriptions"
@@ -126,35 +155,46 @@ export default function HomePage() {
 
           </form>
 
-
           <p className="newsletter-note">
             You'll receive an email to confirm your subscription.
           </p>
 
         </div>
-
       </section>
 
 
-      {/* Contact */}
+      {/* Contact CTA */}
       <section className="page-shell">
-
         <div className="home-contact">
 
           <p className="eyebrow">
-            Work With Me
+            Contact
           </p>
 
           <h2>
-            Have a problem worth investigating?
+            Let&apos;s work on something worth understanding.
           </h2>
 
-          <a href="/contact" className="button primary">
-            Discuss Your Project
+          <p className="hero-text">
+            I am open to conversations around research, strategy, technology,
+            collaborations, professional opportunities and complex problems
+            that require careful investigation.
+          </p>
+
+          <a href="/contact" className="button secondary">
+            Start a Conversation
+          </a>
+        
+          <a
+            href="https://ethentra.co/insights"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="button primary"
+          >
+            Read Ethentra Insights
           </a>
 
         </div>
-
       </section>
 
     </main>

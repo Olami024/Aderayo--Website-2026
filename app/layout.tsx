@@ -23,12 +23,12 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Research and Solutions Strategist working across philosophy, research, strategy and technology.",
+    "An applied philosopher exploring data engineering, artificial intelligence, and data-driven decision-making through technology and strategic thinking.",
 
   openGraph: {
     title: "Aderayo Olamide Adelanwa",
     description:
-      "Research and Solutions Strategist.",
+      "PHILOSOPHY · DATA · AI · DECISION-MAKING",
     type: "website",
   },
 
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Aderayo Olamide Adelanwa",
     description:
-      "Research and Solutions Strategist.",
+      "An applied philosopher exploring data engineering, artificial intelligence, and data-driven decision-making through technology and strategic thinking.",
   },
 };
 
@@ -63,7 +63,9 @@ export default function RootLayout({
           <nav className="nav">
             <a href="/">Home</a>
             <a href="/career">Career</a>
+            <a href="/projects">Projects</a>
             <a href="/business">Business</a>
+            <a href="/journal">Journal</a>
             <a href="/contact">Contact</a>
           </nav>
         </header>

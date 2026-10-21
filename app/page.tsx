@@ -11,24 +11,46 @@ export default function HomePage() {
         <div className="hero-content">
 
           <p className="eyebrow">
-            RESEARCH & SOLUTIONS STRATEGIST 
+            PHILOSOPHY OF DATA · DATA ENGINEERING · AI · DECISION-MAKING
           </p>
 
           <h2>
-            Research, strategy and technology for complex problems.
+            Making Sense of Complex Problems.
           </h2>
 
           <p className="hero-text">
-            I work across research, strategy and technology, helping businesses,
-            professionals and organisations understand difficult problems,
-            evaluate evidence and opportunities, and develop better-informed
-            solutions.
+            With nearly a decade of multidisciplinary experience
+            spanning teaching, auditing, research, consulting, 
+            and strategic problem-solving, 
+            three interests have remained central 
+            to my work: philosophy, data, and strategy.
           </p>
 
           <p className="hero-text">
-            My work is shaped by a background in philosophy; professional
-            research practice, a deep interest in strategy and decision making,
-            and an increasing technical focus on solution architecture.
+            My work focuses on understanding complex problems, 
+            interpreting information, 
+            and applying evidence to improve decision-making.
+          </p>
+          <p>
+            Building on this foundation, 
+            I am developing my expertise in data engineering,
+            backend systems, data platforms, and AI, 
+            with a long-term focus on Data & 
+            AI Engineering and Solutions Architecture.
+          </p>
+
+          <p className="hero-text">
+            My entrepreneurial ambitions span commerce 
+            and enterprise development, 
+            with a focus on building 
+            sustainable businesses that 
+            create opportunities and meaningful impact.
+          </p>
+          <p className="hero-text">
+            My academic work remains grounded in philosophy, with doctoral research 
+            exploring data-driven decision-making and its ethical implications.
+            My goal is to bring together philosophical reasoning, engineering, 
+            and strategic thinking to develop practical, responsible solutions.
           </p>
 
           <div className="hero-buttons">
@@ -37,14 +59,9 @@ export default function HomePage() {
             </a>
 
             <a
-            href="https://ethentra.co"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="button secondary"
-            >
-              Visit Ethentra
+            href="/projects" className="button primary">
+              View My Projects
             </a>
-        
           </div>
         </div>
         <div>
@@ -61,65 +78,23 @@ export default function HomePage() {
         </div>
       </section>
 
-
-      {/* About Me */}
-      <section className="page-shell">
-        <div className="home-journal">
-
-          <p className="eyebrow">
-            About Me
-          </p>
-
-          <h2>
-            Understanding problems before designing solutions.
-          </h2>
-
-          <p >
-            My work has developed around a persistent interest in how people
-            and organisations understand difficult problems, make decisions,
-            and translate ideas into action.
-          </p>
-
-          <p>
-            Philosophy gave me a foundation in reasoning, evidence, ethics and
-            human judgement.Research became the practical extension of that
-            foundation: a way of investigating markets, organisations,
-            technologies and complex questions systematically.
-          </p>
-          <p>
-              Strategy is where philosophy and research moves toward decision and action.
-              I am interested in how organisations define problems, assess opportunities, 
-              evaluate alternatives, allocate resources and turn evidence into practical 
-              direction
-          </p>
-
-          <p>
-            Technology is becoming the next layer of that work. I am developing
-            deeper technical capability in Python backend engineering, cloud
-            systems, MLOps and solution architecture, with a long-term interest
-            in designing systems that bring together research, data, human
-            judgement and technology.
-          </p>
-
-        </div>
-      </section>
-
       {/* Newsletter */}
       <section className="page-shell">
         <div className="newsletter">
 
           <p className="eyebrow">
-            Ethentra Insights
+            The Decision Brief
           </p>
 
           <h2>
-            Research and ideas worth following.
+            Ideas worth following.
           </h2>
 
           <p>
-            Subscribe for new research, essays and practical thinking on
-            markets, decision systems, technology, organisational problems
-            and emerging ideas.
+            Explore ideas that challenge your thinking, 
+            deepen your understanding, and inspire practical solutions. 
+            Subscribe for fresh perspectives on applied philosophy, decision-making, research, strategy, data engineering, and AI.
+            
           </p>
 
           <Script
@@ -168,30 +143,17 @@ export default function HomePage() {
         <div className="home-contact">
 
           <p className="eyebrow">
-            Contact
+             CONNECT & COLLABORATE
           </p>
 
-          <h2>
-            Let&apos;s work on something worth understanding.
-          </h2>
-
           <p className="hero-text">
-            I am open to conversations around research, strategy, technology,
-            collaborations, professional opportunities and complex problems
-            that require careful investigation.
+            Let's Explore Possibilities.
+            Interested in collaboration, 
+            business partnerships, or discussing an opportunity?
           </p>
 
           <a href="/contact" className="button secondary">
             Start a Conversation
-          </a>
-        
-          <a
-            href="https://ethentra.co/insights"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="button primary"
-          >
-            Read Ethentra Insights
           </a>
 
         </div>

@@ -110,16 +110,24 @@ export default function ContactForm() {
           </option>
 
 
-          <option value="Ethentra Services">
-            Ethentra Services
+          <option value="Work">
+            Business partnerships 
           </option>
 
           <option value="Speaking / Training">
             Speaking / Training
           </option>
 
+          <option value="Collaboration">
+            Collaboration
+          </option>
+
+          <option value="Discussing an opportunity">
+            Discussing an opportunity
+          </option>
+
           <option value="General Enquiry">
-            General Enquiry
+            General Enquiry 
           </option>
         </select>
       </div>

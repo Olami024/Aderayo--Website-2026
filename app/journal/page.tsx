@@ -8,142 +8,130 @@ import {
   getAllArticles,
 } from "../../lib/journal";
 
-
 export const metadata: Metadata = {
-  title: "Journal",
+  title: "Journal | Aderayo Olamide Adelanwa",
   description:
-    "Research, decision systems, markets, technology, and human judgment.",
+    "Articles and explorations in philosophy of data, data engineering, AI, decision-making, and strategy.",
 };
-
 
 export default function JournalPage() {
   const journalPosts = getAllArticles();
 
   return (
-    <main className="page-shell">
+    <main className="page-shell journal-page">
 
       {/* JOURNAL HERO */}
-      <section className="page-hero">
-
+      <section className="journal-hero">
         <p className="eyebrow">
           {journal.title}
         </p>
 
-        <h1>
-          {journal.tagline}
-        </h1>
+        <h1>{journal.tagline}</h1>
 
-        <p>
+        <p className="journal-intro">
           {journal.description}
         </p>
-
       </section>
 
-
       {/* JOURNAL CATEGORIES */}
-      <section className="research-direction">
+      <section className="journal-section">
+        <div className="journal-section-heading">
+          <p className="eyebrow">
+            EXPLORE BY TOPIC
+          </p>
 
-        <p className="eyebrow">
-          Journal Categories
-        </p>
+          <h2>Areas of Inquiry.</h2>
+        </div>
 
         <div className="journal-categories">
-
           {journalCategories.map((category) => (
-
             <Link
               key={category.slug}
               href={`/journal/category/${category.slug}`}
               className="journal-category-link"
             >
               {category.name}
+              <span aria-hidden="true">↗</span>
             </Link>
-
           ))}
+        </div>
+      </section>
 
+      {/* PUBLISHED ARTICLES */}
+      <section className="journal-section">
+        <div className="journal-section-heading">
+          <p className="eyebrow">
+            JOURNAL ENTRIES
+          </p>
+
+          <h2>Writing & Perspectives.</h2>
+
+          <p>
+            Essays, technical articles, and reflections
+            on data, technology, philosophy, and
+            decision-making.
+          </p>
         </div>
 
-      </section>
-
-
-      {/* ARTICLES */}
-      <section className="journal-list">
-
         {journalPosts.length === 0 ? (
-
           <div className="journal-empty">
-
             <p className="eyebrow">
-              Coming Soon
+              COMING SOON
             </p>
 
-            <h2>
-              New essays and research notes will appear here.
-            </h2>
+            <h3>
+              New writing is on the way.
+            </h3>
 
             <p>
-              I use this space to investigate questions,
-              develop ideas, and write about research,
-              markets, human judgment, technology,
-              and decision systems.
+              I am developing articles exploring data
+              engineering, artificial intelligence,
+              philosophy of data, and decision-making.
             </p>
-
           </div>
-
         ) : (
+          <div className="journal-grid">
+            {journalPosts.map((post) => {
+              const category = journalCategories.find(
+                (item) =>
+                  item.slug === post.category
+              );
 
-          journalPosts.map((post) => (
-
-            <article
-              className="journal-card"
-              key={post.slug}
-            >
-
-              <p className="journal-meta">
-
-                <Link
-                  href={`/journal/category/${post.category}`}
+              return (
+                <article
+                  className="journal-card"
+                  key={post.slug}
                 >
-                  {journalCategories.find(
-                    (category) =>
-                      category.slug === post.category
-                  )?.name || post.category}
-                </Link>
+                  <div className="journal-card-meta">
+                    <Link
+                      href={`/journal/category/${post.category}`}
+                    >
+                      {category?.name || post.category}
+                    </Link>
 
-                {" · "}
+                    <span>{post.date}</span>
+                  </div>
 
-                {post.date}
+                  <h3>
+                    <Link href={`/journal/${post.slug}`}>
+                      {post.title}
+                    </Link>
+                  </h3>
 
-              </p>
+                  <p>{post.description}</p>
 
-
-              <h2>
-                <Link href={`/journal/${post.slug}`}>
-                  {post.title}
-                </Link>
-              </h2>
-
-
-              <p>
-                {post.description}
-              </p>
-
-
-              <Link
-                href={`/journal/${post.slug}`}
-                className="journal-read"
-              >
-                Read essay →
-              </Link>
-
-            </article>
-
-          ))
-
+                  <Link
+                    href={`/journal/${post.slug}`}
+                    className="journal-read"
+                  >
+                    Read Article ↗
+                  </Link>
+                </article>
+              );
+            })}
+          </div>
         )}
-
       </section>
-
     </main>
   );
 }

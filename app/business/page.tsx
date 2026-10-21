@@ -1,46 +1,162 @@
+
+import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Business",
+  title: "Business & Ventures | Aderayo Olamide Adelanwa",
   description:
-    "Entrepreneurial ventures by Aderayo Olamide Adelanwa across research, strategy, technology, lifestyle, hospitality, and commerce.",
+    "Explore the entrepreneurial ventures of Aderayo Olamide Adelanwa across data, AI, research, technology, lifestyle, hospitality, and commerce.",
 };
+
+const ventures = [
+  {
+    number: "01",
+    name: "Ethentra",
+    category: "DATA · AI · STRATEGY",
+    description:
+      "A Data & AI Solutions company developing data infrastructure, automated workflows, backend systems, and AI applications. Ethentra also provides research and strategic advisory services.",
+    status: "Building & Developing",
+    href: "https://ethentra.co",
+    linkText: "Explore Ethentra ↗",
+  },
+  {
+    number: "02",
+    name: "Deran Sphere",
+    category: "LIFESTYLE · HOSPITALITY · COMMERCE",
+    description:
+      "An entrepreneurial venture spanning lifestyle, hospitality, and commerce, with a focus on meaningful experiences, practical offerings, and lasting customer value.",
+    status: "Under Rebranding",
+    href: null,
+    linkText: null,
+  },
+];
 
 export default function BusinessPage() {
   return (
-    <main className="page-shell">
-      <section className="page-hero">
-        <p className="eyebrow">Ventures</p>
+    <main className="page-shell compact-page">
+
+      {/* Introduction */}
+      <section className="compact-hero">
+        <p className="eyebrow">
+          BUSINESS & ENTREPRENEURSHIP
+        </p>
 
         <h1>
-          Building across research, technology, lifestyle, hospitality,
-          and commerce.
+          Building Across Industries.
+          <br />
+          Creating Lasting Value.
         </h1>
 
-        <p>
-          My entrepreneurial interests span research, technology, lifestyle,
-          hospitality, and commerce building through Ethentra and Deran Sphere. 
-          I am interested in building ventures that
-          bring together ideas, practical problem-solving, memorable experience, and long-term value.
+        <p className="compact-intro">
+          My entrepreneurial interests span research,
+          technology, lifestyle, hospitality, and commerce.
+          Through Ethentra and Deran Sphere, I am developing
+          ventures that combine strategic thinking, practical
+          problem-solving, memorable experiences, and
+          long-term value.
         </p>
+      </section>
+
+      {/* Ventures */}
+      <section className="compact-section">
+        <div className="compact-section-heading">
+          <p className="eyebrow">
+            VENTURES & INITIATIVES
+          </p>
+
+          <h2>What I Am Building.</h2>
+        </div>
+
+        <div className="venture-grid">
+          {ventures.map((venture) => (
+            <article
+              className="venture-card"
+              key={venture.number}
+            >
+              <div className="venture-card-top">
+                <span className="venture-number">
+                  {venture.number} / VENTURE
+                </span>
+
+                <span className="venture-status">
+                  {venture.status}
+                </span>
+              </div>
+
+              <p className="venture-category">
+                {venture.category}
+              </p>
+
+              <h3>{venture.name}</h3>
+
+              <p className="venture-description">
+                {venture.description}
+              </p>
+
+              {venture.href ? (
+                <a
+                  href={venture.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="venture-link"
+                >
+                  {venture.linkText}
+                </a>
+              ) : (
+                <span className="venture-unavailable">
+                  Reopening details to be announced
+                </span>
+              )}
+            </article>
+          ))}
+        </div>
+      </section>
+
+      {/* Business Direction */}
+      <section className="compact-section">
+        <div className="compact-highlight">
+          <p className="eyebrow">
+            ENTREPRENEURIAL DIRECTION
+          </p>
+
+          <h2>Ideas Into Practical Ventures.</h2>
+
+          <p>
+            My approach to entrepreneurship is grounded in
+            identifying real needs, developing sustainable
+            solutions, and building businesses that create
+            meaningful economic and social value.
+          </p>
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="compact-section compact-cta">
+        <p className="eyebrow">CONNECT & COLLABORATE</p>
+
+        <h2>Let's Explore Possibilities.</h2>
+
         <p>
-          Deran Sphere is currently close due to rebranding, to be reopening soon. 
-          Ethentra provides solutions such as applied research, 
-          strategic advisory, professional education, 
-          and technical engagements.
+          Interested in collaboration, business partnerships,
+          or discussing an opportunity?
         </p>
 
-        <div className="hero-buttons">
+        <div className="compact-actions">
+          <Link href="/contact" className="button primary">
+            Get in Touch ↗
+          </Link>
+
           <a
-            href="https://ethentra.co/"
+            href="https://ethentra.co"
             target="_blank"
             rel="noopener noreferrer"
-            className="button primary"
+            className="button secondary"
           >
-            Visit Ethentra
+            Visit Ethentra ↗
           </a>
         </div>
       </section>
+
     </main>
   );
 }

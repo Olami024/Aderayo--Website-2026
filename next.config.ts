@@ -1,3 +1,4 @@
+
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
@@ -21,11 +22,6 @@ const nextConfig: NextConfig = {
       {
         source: "/about/ventures",
         destination: "/business",
-        permanent: true,
-      },
-      {
-        source: "/journal",
-        destination: "/writing",
         permanent: true,
       },
     ];

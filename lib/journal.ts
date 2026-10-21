@@ -1,4 +1,9 @@
+
 import { journalPosts } from "../content/journal/posts";
+
+/* ========================================
+   JOURNAL CATEGORIES
+======================================== */
 
 export type JournalCategory = {
   name: string;
@@ -6,58 +11,45 @@ export type JournalCategory = {
 };
 
 export const journalCategories: JournalCategory[] = [
+  
   {
-    name: "Research",
-    slug: "research",
+    name: "Philosophy of Data",
+    slug: "philosophy-of-data",
   },
   {
-    name: "Markets & Business",
-    slug: "markets-and-business",
+    name: "Decision-Making",
+    slug: "decision-making",
   },
   {
-    name: "Human Judgment",
-    slug: "human-judgment",
-  },
-  {
-    name: "Decision Systems",
-    slug: "decision-systems",
+    name: "Data Engineering & Systems",
+    slug: "data-engineering-and-systems",
   },
   {
     name: "Artificial Intelligence",
     slug: "artificial-intelligence",
   },
   {
-    name: "Machine Learning",
-    slug: "machine-learning",
+    name: "Research & Strategy",
+    slug: "research-and-strategy",
   },
   {
-    name: "Technology",
-    slug: "technology",
-  },
-  {
-    name: "Philosophy",
-    slug: "philosophy",
-  },
-  {
-    name: "Recommendation & Optimization Systems",
-    slug: "recommendation-and-optimization-systems",
-  },
-  {
-    name: "Data-Driven Organisations",
-    slug: "data-driven-organisations",
+    name: "Technology & Society",
+    slug: "technology-and-society",
   },
 ];
+
+/* ========================================
+   JOURNAL INFORMATION
+======================================== */
 
 export const journal = {
   title: "JOURNAL",
 
-  tagline:
-    "Research, decision systems, markets, technology, and human judgment.",
+  tagline: "Ideas, Systems & Decisions.",
 
   description:
-    "The Journal is where I investigate how people and organisations make decisions, how evidence and markets shape those decisions, and how software, data, and machine learning are changing the systems through which decisions are made.",
+    "A collection of articles, essays, and technical explorations at the intersection of data engineering, artificial intelligence, philosophy of data, and decision-making. Through practical engineering and critical inquiry, I explore how we build systems, interpret information, and make decisions in a data-driven world.",
 };
-
 
 /* ========================================
    ARTICLES
@@ -67,21 +59,19 @@ export function getAllArticles() {
   return journalPosts;
 }
 
-
 export function getArticleBySlug(slug: string) {
   return journalPosts.find(
     (post) => post.slug === slug
   );
 }
 
-
-export function getArticlesByCategory(
-  category: string
-) {
+export function getArticlesByCategory(category: string) {
   return journalPosts.filter(
-    (post) => post.category === category
+    (post) =>
+      post.category.toLowerCase().trim() ===
+      category.toLowerCase().trim()
   );
 }
 
-
 export { journalPosts };
+

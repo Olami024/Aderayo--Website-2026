@@ -11,7 +11,7 @@ export default function HomePage() {
         <div className="hero-content">
 
           <p className="eyebrow">
-            PHILOSOPHY OF DATA · DATA ENGINEERING · AI · DECISION-MAKING
+            PHILOSOPHY· DATA · AI · DECISION-MAKING
           </p>
 
           <h2>
@@ -19,38 +19,28 @@ export default function HomePage() {
           </h2>
 
           <p className="hero-text">
-            With nearly a decade of multidisciplinary experience
-            spanning teaching, auditing, research, consulting, 
-            and strategic problem-solving, 
-            three interests have remained central 
-            to my work: philosophy, data, and strategy.
+            Over the past decade, 
+            my professional experience 
+            has spanned writing, teaching, 
+            research, consulting, compliance, 
+            and auditing.
           </p>
 
           <p className="hero-text">
-            My work focuses on understanding complex problems, 
-            interpreting information, 
-            and applying evidence to improve decision-making.
+             Building on this multidisciplinary foundation, 
+             I am developing expertise as an 
+             interdisciplinary data professional, 
+             combining technical knowledge of data 
+             engineering and architecture with 
+             strategic capabilities in data management and governance. 
           </p>
           <p>
-            Building on this foundation, 
-            I am developing my expertise in data engineering,
-            backend systems, data platforms, and AI, 
-            with a long-term focus on Data & 
-            AI Engineering and Solutions Architecture.
-          </p>
-
-          <p className="hero-text">
-            My entrepreneurial ambitions span commerce 
-            and enterprise development, 
-            with a focus on building 
-            sustainable businesses that 
-            create opportunities and meaningful impact.
-          </p>
-          <p className="hero-text">
-            My academic work remains grounded in philosophy, with doctoral research 
-            exploring data-driven decision-making and its ethical implications.
-            My goal is to bring together philosophical reasoning, engineering, 
-            and strategic thinking to develop practical, responsible solutions.
+            Drawing on my background in philosophy, 
+            I am particularly interested in the ethical, 
+            axiological, epistemological and 
+            organisational dimensions of data, 
+            including its responsible use in 
+            decision-making and technological innovation.
           </p>
 
           <div className="hero-buttons">

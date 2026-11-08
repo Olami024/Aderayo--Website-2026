@@ -14,7 +14,7 @@ const ventures = [
     name: "Ethentra",
     category: "DATA · AI · STRATEGY",
     description:
-      "A Data & AI Solutions company developing data infrastructure, automated workflows, backend systems, and AI applications. Ethentra also provides research and strategic advisory services.",
+      "A Data Solutions company helping businesses collect, organise, transform and use data effectively. Our work combines technical engineering with analytical thinking, research and responsible data practices.",
     status: "Building & Developing",
     href: "https://ethentra.co",
     linkText: "Explore Ethentra ↗",
@@ -24,7 +24,7 @@ const ventures = [
     name: "Deran Sphere",
     category: "LIFESTYLE · HOSPITALITY · COMMERCE",
     description:
-      "An entrepreneurial venture spanning lifestyle, hospitality, and commerce, with a focus on meaningful experiences, practical offerings, and lasting customer value.",
+      "An entrepreneurial venture spanning  media, lifestyle, hospitality, and commerce, with a focus on meaningful experiences, practical offerings, and lasting customer value.",
     status: "Under Rebranding",
     href: null,
     linkText: null,
@@ -49,7 +49,7 @@ export default function BusinessPage() {
 
         <p className="compact-intro">
           My entrepreneurial interests span research,
-          technology, lifestyle, hospitality, and commerce.
+          technology, media, lifestyle, hospitality, and commerce.
           Through Ethentra and Deran Sphere, I am developing
           ventures that combine strategic thinking, practical
           problem-solving, memorable experiences, and

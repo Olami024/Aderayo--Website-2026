@@ -6,27 +6,27 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Career | Aderayo Olamide Adelanwa",
   description:
-    "Explore Aderayo Olamide Adelanwa's career across philosophy, research, data engineering, AI, and strategic problem-solving.",
+    "Explore Aderayo Olamide Adelanwa's career across philosophy, research, data and strategic problem-solving.",
 };
 
 const technicalFocus = [
   {
     number: "01",
-    title: "Data Engineering & Platforms",
+    title: "Data Systems & Infrastructure",
     description:
-      "Developing expertise in Python, SQL, databases, ETL/ELT pipelines, data integration, processing, and cloud data infrastructure.",
+      "Developing expertise in Python, SQL, databases, data modelling, ETL/ELT pipelines, data integration and cloud infrastructure.",
   },
   {
     number: "02",
-    title: "Backend Engineering",
+    title: "Software & Systems Integration",
     description:
-      "Building Python backend systems, REST APIs, database-driven applications, and system integrations.",
+      "Building capabilities in Python backend development, REST APIs, database-driven applications, application architecture and system integration.",
   },
   {
     number: "03",
-    title: "AI Engineering",
+    title: "AI & Intelligent Systems",
     description:
-      "Exploring AI applications, information retrieval, intelligent workflows, and practical AI integrations.",
+      "Exploring AI applications, machine learning, information retrieval, intelligent workflows and AI integration.",
   },
 ];
 
@@ -60,27 +60,35 @@ export default function CareerPage() {
           </p>
 
           <h1>
-            From Critical Thinking to Engineering Solutions.
+            From Thinking to Solutions.
           </h1>
 
           <p className="career-intro">
-            My professional journey spans nearly a decade
-            of multidisciplinary experience across teaching,
-            auditing, research, consulting, writing, and
-            strategic problem-solving.
+            My professional journey spans nearly a decade 
+            of multidisciplinary experience across teaching, 
+            auditing, research, consulting, writing, and strategic problem-solving.
           </p>
 
           <p>
-            Philosophy, data, and strategy have remained
-            central to how I understand problems, evaluate
-            evidence, and approach decision-making.
+            Throughout this journey, philosophy, 
+            critical inquiry and strategic thinking 
+            have shaped how I approach complex problems, 
+            evaluate evidence, understand knowledge and navigate decision-making.
+          </p>
+          <p>
+             I am currently expanding my expertise across 
+             the data ecosystem, developing technical capabilities 
+             in data engineering, data architecture, backend systems,
+             data platforms and cloud technologies, alongside strategic
+             interests in data management, governance, data ethics and responsible AI.
           </p>
 
           <p>
-            I am now deepening my expertise in data
-            engineering, backend systems, data platforms,
-            and AI, with a long-term focus on Data & AI
-            Engineering and Solutions Architecture.
+            My long-term ambition is to contribute to the design, 
+            development and governance of intelligent, data-driven systems,
+            bringing together technical competence, strategic insight 
+            and philosophical perspectives on the ethical, 
+            epistemological and axiological dimensions of data.
           </p>
         </div>
 
@@ -140,9 +148,9 @@ export default function CareerPage() {
           <h2>Experience Across Disciplines.</h2>
 
           <p>
-            My professional background combines research,
-            organisational work, teaching, and practical
-            problem-solving.
+            Over the past decade, I have built a 
+            multidisciplinary professional background encompassing research, 
+            organisational experience, teaching, and practical problem-solving.
           </p>
         </div>
 
@@ -166,19 +174,13 @@ export default function CareerPage() {
             ACADEMIC & RESEARCH WORK
           </p>
 
-          <h2>Philosophy of Data & Decision-Making.</h2>
+          <h2>Applied Philosophy.</h2>
 
           <p>
-            My academic work in philosophy explores
-            data-driven decision-making, human judgment,
-            ethical responsibility, and the relationship
-            between evidence and technological systems.
-          </p>
-
-          <p>
-            My broader interests include applied philosophy,
-            philosophy of data, ethics, and interdisciplinary
-            approaches to understanding complex problems.
+            My area of concentration in philosophy is applied philosophy. 
+            Within this field, my growing area of specialisation 
+            focuses particularly on the ethical, 
+            axiological, epistemological and organisational dimensions of data.
           </p>
 
           <div className="career-actions">

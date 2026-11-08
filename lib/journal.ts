@@ -48,7 +48,7 @@ export const journal = {
   tagline: "Ideas, Systems & Decisions.",
 
   description:
-    "A collection of articles, essays, and technical explorations at the intersection of data engineering, artificial intelligence, philosophy of data, and decision-making. Through practical engineering and critical inquiry, I explore how we build systems, interpret information, and make decisions in a data-driven world.",
+    "A collection of articles, essays and technical explorations at the intersection of data, technology, applied philosophy and organisational practice. Through critical inquiry and technical exploration, I examine the ethical, axiological, epistemological and organisational dimensions of data, exploring how data is produced, interpreted, valued, governed and used in decision-making and technological innovation.",
 };
 
 /* ========================================

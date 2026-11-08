@@ -11,24 +11,24 @@ export const metadata: Metadata = {
 const categories = [
   {
     number: "01",
-    title: "Data Engineering & Systems",
-    label: "DATA ENGINEERING",
+    title: "Data Engineering, Architecture & Intelligent Systems",
+    label: "TECHNICAL EXPLORATIONS",
     description:
-      "Practical projects exploring data pipelines, databases, ETL/ELT processes, backend systems, data integration, and automation.",
+      "Practical projects and technical explorations in data engineering, data architecture, database systems, data pipelines, ETL/ELT processes, cloud infrastructure, data integration, automation and AI applications.",
   },
   {
     number: "02",
-    title: "AI Engineering & Applications",
-    label: "ARTIFICIAL INTELLIGENCE",
+    title: "Data Strategy, Management, Governance & Responsible AI",
+    label: "STRATEGIC & GOVERNANCE EXPLORATIONS",
     description:
-      "Applications and experiments exploring AI integration, intelligent workflows, information retrieval, and responsible AI.",
+      "Explorations of enterprise data strategy, data management, data governance frameworks, data quality, business intelligence, organisational decision-making, privacy, accountability, regulatory compliance and responsible AI. With an interest in aligning data capabilities with organisational objectives, ethical standards and sustainable value creation.",
   },
   {
     number: "03",
-    title: "Philosophy of Data & Decision-Making",
+    title: "Philosophy of Data, Knowledge, Ethics & Value",
     label: "PHILOSOPHICAL EXPLORATIONS",
     description:
-      "Research and critical explorations of data, evidence, ethics, algorithmic decisions, and the relationship between technology and human judgment.",
+      "Philosophical and critical inquiries into the nature, production, interpretation and use of data, with particular attention to epistemological, ethical and axiological questions, algorithmic inference, knowledge, human judgment and the relationship between technology and society.",
   },
 ];
 
@@ -86,6 +86,12 @@ export default function ProjectsPage() {
           </p>
 
           <h2>What I Explore.</h2>
+          <p>
+            My work and ongoing professional development 
+            span three interconnected areas, combining
+            technical practice, strategic and governance thinking,
+            and philosophical inquiry into data and technology.
+          </p>
         </div>
 
         <div className="exploration-grid">
